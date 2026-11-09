@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Juan Pablo | Perfil</title>
 </head>
-<body>
-    <header class="md:sticky top-0 z-50 bg-slate-950 text-zinc-300">
+<body id="inicio">
+    <header class="md:sticky top-0 bg-slate-950 text-zinc-300">
         <nav class="p-2 w-full flex flex-col items-center justify-center text-center md:flex-row md:justify-around">
             <div class="flex items-center gap-1">
                 <img class="w-15 h-15 rounded-full object-cover" src="img/image.png" alt="Foto de perfil">
@@ -26,10 +26,8 @@
                 <li><a class="hover:text-blue-600" href="#inicio">Inicio</a></li>
                 <li><a class="hover:text-blue-600" href="#sobre-mi">Sobre mí</a></li>
                 <li><a class="hover:text-blue-600" href="#habilidades">Habilidades</a></li>
-                <li><a class="hover:text-blue-600" href="">Tecnologias</a></li>
-                <li><a class="hover:text-blue-600" href="">Rutas</a></li>
-                <li><a class="hover:text-blue-600" href="">Horarios</a></li>
-                <li><a class="hover:text-blue-600" href="">Contacto</a></li>
+                <li><a class="hover:text-blue-600" href="#tecnologias">Tecnologias</a></li>
+                <li><a class="hover:text-blue-600" href="#contacto">Contacto</a></li>
             </ul>
             <div class="hidden md:block">
                 <a href="https://github.com/JuanPMorales" target="_blank" 
@@ -42,7 +40,7 @@
     </header>
 
     <main class="text-zinc-300">
-        <section id="inicio" class="grid lg:grid-cols-2 gap-5 pb-5 bg-slate-950/95 pt-2 px-10 md:px-30 lg:px-30">
+        <section class="grid lg:grid-cols-2 gap-5 pb-5 bg-slate-950/95 pt-2 px-10 md:px-30 lg:px-30">
             <div class="flex flex-col items-center justify-center gap-3 md:items-start md:text-left">
                 <h1 class="w-full max-w-xl text-center text-4xl font-bold md:text-left md:text-5xl lg:text-6xl">Juan Pablo Morales Salazar</h1>
                 <div class="w-full max-w-xl p-4 rounded-2xl bg-slate-600/80 border border-slate-700/60 shadow-md">
@@ -51,7 +49,7 @@
                 <p class="w-full max-w-xl text-lg">Estudiante enfocado en la construcción de sitios y aplicaciones web modernas, funcionales y adaptables. Apasionado por aprender continuamente nuevas herramientas y buenas prácticas del desarrollo web.</p>
                 <div class="flex w-full max-w-xl flex-col items-stretch justify-center gap-3 pt-5 md:flex-row">
                     <a class="flex flex-1 items-center justify-center text-center text-xl text-white font-semibold border p-4 rounded-2xl bg-blue-700 hover:bg-blue-800" href=""><i class="fab fa-github text-lg px-3"></i>Mi perfil de GitHub</a>
-                    <a class="flex flex-1 items-center justify-center text-center text-xl text-white font-semibold border p-4 rounded-2xl bg-slate-800 hover:bg-slate-600" href="#sobre-mi"><i class="fas fa-arrow-down text-electric-500 px-3"></i>Conocer más</a>
+                    <a class="flex flex-1 items-center justify-center text-center text-xl text-white font-semibold border p-4 rounded-2xl bg-slate-800 hover:bg-slate-600" href="#sobre-mi"><i class="fas fa-arrow-down px-3"></i>Conocer más</a>
                 </div>
             </div>
             <img class="mx-auto rounded-full border border-white" src="img/image.png" alt="foto de perfil">
@@ -80,11 +78,11 @@
                         <h3 class="text-xs font-bold uppercase">Datos Rápidos</h3>
                         <div class="space-y-8 text-sm">
                             <div class="md:flex gap-2 pb-2 border-b border-slate-500">
-                                <h4><i class="fas fa-user text-electric-500 mr-2"></i>Nombre</h4>
+                                <h4><i class="fas fa-user mr-2"></i>Nombre</h4>
                                 <p>Juan Pablo Morales Salazar</p>
                             </div>
                             <div class="md:flex gap-2 pb-2 border-b border-slate-500">
-                                <h4><i class="fas fa-map-marker-alt text-electric-500 mr-2"></i>Ubicación</h4>
+                                <h4><i class="fas fa-map-marker-alt mr-2"></i>Ubicación</h4>
                                 <p>Caldas, Antioquia</p>
                             </div>
                         </div>
@@ -120,7 +118,7 @@
                     <div class="Flex items-start justify-between">
                         <div class="flex items-center gap-4">
                             <div class="w-14 h-14 rounded-2xl bg-slate-900 border border-slate-700 flex items-center justify-center text-3xl text-white">
-                                <i class="fab fa-git-alt text-whit transition-colors duration-300 group-hover:text-orange-700"></i>
+                                <i class="fab fa-git-alt text-white transition-colors duration-300 group-hover:text-orange-700"></i>
                             </div>
                             <div>
                                 <h3 class="text-xl font-bold text-white">Git</h3>
@@ -133,83 +131,75 @@
             </div>
         </section>
 
-        <section>
-            <p>Stack Técnico</p>
-            <h2>Tecnologías que estoy aprendiendo</h2>
+        <section id="tecnologias" class="px-10 md:px-30 lg:px-30 bg-slate-800 py-2">
+            <div class="text-center font-bold py-2">
+                <p class="text-xs text-blue-700 uppercase">Stack Técnico</p>
+                <h2 class="text-3xl">Tecnologías que estoy aprendiendo</h2>
+                <div class="w-12 h-1 bg-blue-700 mx-auto rounded-full mt-3"></div>
+            </div>
 
-            <div>
-                <h3>HTML</h3>
-                <p>Estructura web semántica, formularios y buena accesibilidad.</p>
-            </div>
-            <div>
-                <h3>CSS</h3>
-                <p>Estilos responsivos, Flexbox, CSS Grid, Bootstrap y Tailwind CSS.</p>
-            </div>
-            <div>
-                <h3>Git</h3>
-                <p>Comandos de terminal, commits y flujo de trabajo estructurado.</p>
-            </div>
-            <div>
-                <h3>JavaScript</h3>
-                <p>Lógica de programación, eventos e interactividad con el DOM.</p>
-            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-slate-700 p-6 rounded-2xl border border-slate-700/70 hover:border-orange-500/50 transition-all group shadow-md">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-orange-500/10 text-orange-500 flex items-center justify-center text-2xl transition-transform">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                    </div>
+                    <h3>HTML</h3>
+                    <p>Estructura web semántica, formularios y buena accesibilidad.</p>
+                </div>
+                <div class="bg-slate-700 p-6 rounded-2xl border border-slate-700/70 hover:border-blue-500/50 transition-all group shadow-md">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-500 flex items-center justify-center text-2xl transition-transform">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                    </div>
+                    <h3>CSS</h3>
+                    <p>Estilos responsivos, Flexbox, CSS Grid, Bootstrap y Tailwind CSS.</p>
+                </div>
+                <div class="bg-slate-700 p-6 rounded-2xl border border-slate-700/70 hover:border-red-500/50 transition-all group shadow-md">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-red-500/10 text-red-500 flex items-center justify-center text-2xl transition-transform">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                    </div>
+                    <h3>Git</h3>
+                    <p>Comandos de terminal, commits y flujo de trabajo estructurado.</p>
+                </div>
         </section>
-
-
-        <section>
-            <p>Planificación</p>
-            <h2>Mis horarios</h2>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Horarios</th>
-                        <th>Lunes</th>
-                        <th>Martes</th>
-                        <th>Miércoles</th>
-                        <th>Jueves</th>
-                        <th>Viernes</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>Mañana</td><td>Riwi</td><td>Riwi</td><td>Riwi</td><td>Riwi</td><td>Riwi</td></tr>
-                </tbody>
-            </table>
-        </section>
-
-        <footer>
-            <div>
-                <h3>Juan Pablo Morales Salazar</h3>
-                <p>Estudiante & Desarrollador Web</p>
-                <p>Caldas, Antioquia, Colombia</p>
-            </div>
-            <div>
-                <a href="">GitHub</a>
-                <a href="">LinkedIn</a>
-            </div>
-
-            <div>
-                <span>
-                    Volver arriba
-                </span>
-            </div>
-
-            <div>
-                <p>&copy; 2026 Juan Pablo Morales Salazar.</p>
-                <p>Diseñado con HTML5, CSS3 & Tailwind CSS</p>
-            </div>
-
-        </footer>
-
     </main>
 
-    <footer>
-        <a href="https://github.com/JuanPMorales" target="_blank">Mi perfil de github</a>    
+    <footer id="contacto" class="bg-slate-950 border-slate-800 py-12 relative text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center border-b border-gray-700 pb-8">
+                <div class="text-center md:text-left space-y-2">
+                    <h3 class="text-lg font-bold text-white">Juan Pablo Morales Salazar</h3>
+                    <p class="text-xs text-slate-400 ">Estudiante & Desarrollador Web</p>
+                    <p class="text-xs text-slate-400 ">Caldas, Antioquia, Colombia</p>
+                </div>
+                <div class="flex items-center justify-center gap-4">
+                    <a href="https://github.com/JuanPMorales" target="_blank" rel="noopener noreferrer" aria-label="Perfil de GitHub" class="w-10 h-10 rounded-xl bg-navy-800 border border-slate-700 flex items-center justify-center text-slate-300 hover:text-white hover:border-white">
+                        <i class="fab fa-github text-lg"></i>
+                    </a>
+                    <a href="www.linkedin.com/in/juanpmorales-s25092005" target="_blank" rel="noopener noreferrer" aria-label="Perfil de LinkedIn" class="w-10 h-10 rounded-xl bg-navy-800 border border-slate-700 flex items-center justify-center text-slate-300 hover:text-white hover:border-white">
+                        <i class="fab fa-linkedin-in text-lg"></i>
+                    </a>
+                    <a href="mailto:j.5.2.0.p.1.3.m@gmail.com" aria-label="Enviar correo electrónico" class="w-10 h-10 rounded-xl bg-navy-800 border border-slate-700 flex items-center justify-center text-slate-300 hover:text-white hover:border-white">
+                        <i class="far fa-envelope text-lg"></i>
+                    </a>
+                </div>
+                <div class="text-center md:text-right">
+                    <a href="#inicio" aria-label="Volver arriba" class="inline-flex items-center gap-2 text-xs font-semibold text-slate-400 hover:text-white bg-navy-800 hover:bg-slate-800 px-4 py-2 rounded-xl border border-slate-700">
+                        <span>Volver arriba</span>
+                        <i class="fas fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="pt-8 text-center text-xs text-slate-300 flex flex-col sm:flex-row items-center justify-around gap-4">
+            <p>&copy; 2026 Juan Pablo Morales Salazar.</p>
+            <p>Diseñado con HTML5, CSS3 & Tailwind CSS</p>
+        </div>
     </footer>
-    
-    
-    
-
-    
 </body>
 </html>
