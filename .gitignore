@@ -1,0 +1,20 @@
+# Dependencias
+node_modules/
+
+# Variables de entorno y configuracion local
+.env
+.env.*
+!.env.example
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos del editor
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Logs
+*.log

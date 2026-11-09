@@ -1,62 +1,215 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/image.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind compilado -->
+    <link rel="stylesheet" href="css/output.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Juan Pablo | Perfil</title>
 </head>
 <body>
-    <h1>Juan Pablo Morales Salazar</h1>
-    <img src="img/image.png" alt="">
-    <p>Soy <strong>coder</strong> de desarrollo de software y me <em>encanta</em> el desarrollo web.</p>
+    <header class="md:sticky top-0 z-50 bg-slate-950 text-zinc-300">
+        <nav class="p-2 w-full flex flex-col items-center justify-center text-center md:flex-row md:justify-around">
+            <div class="flex items-center gap-1">
+                <img class="w-15 h-15 rounded-full object-cover" src="img/image.png" alt="Foto de perfil">
+                <p class="font-bold">Juan P</p>
+            </div>
+
+            <ul class="md:flex gap-3">
+                <li><a class="hover:text-blue-600" href="#inicio">Inicio</a></li>
+                <li><a class="hover:text-blue-600" href="#sobre-mi">Sobre mí</a></li>
+                <li><a class="hover:text-blue-600" href="#habilidades">Habilidades</a></li>
+                <li><a class="hover:text-blue-600" href="">Tecnologias</a></li>
+                <li><a class="hover:text-blue-600" href="">Rutas</a></li>
+                <li><a class="hover:text-blue-600" href="">Horarios</a></li>
+                <li><a class="hover:text-blue-600" href="">Contacto</a></li>
+            </ul>
+            <div class="hidden md:block">
+                <a href="https://github.com/JuanPMorales" target="_blank" 
+                class="text-md text-white font-semibold border p-2 rounded-lg bg-slate-800 hover:bg-slate-700">
+                    <i class="fab fa-github text-md"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="text-zinc-300">
+        <section id="inicio" class="grid lg:grid-cols-2 gap-5 pb-5 bg-slate-950/95 pt-2 px-10 md:px-30 lg:px-30">
+            <div class="flex flex-col items-center justify-center gap-3 md:items-start md:text-left">
+                <h1 class="w-full max-w-xl text-center text-4xl font-bold md:text-left md:text-5xl lg:text-6xl">Juan Pablo Morales Salazar</h1>
+                <div class="w-full max-w-xl p-4 rounded-2xl bg-slate-600/80 border border-slate-700/60 shadow-md">
+                    <p>"Soy <strong>coder</strong> de desarrollo de software y me <em>encanta</em> el desarrollo web."</p>
+                </div>
+                <p class="w-full max-w-xl text-lg">Estudiante enfocado en la construcción de sitios y aplicaciones web modernas, funcionales y adaptables. Apasionado por aprender continuamente nuevas herramientas y buenas prácticas del desarrollo web.</p>
+                <div class="flex w-full max-w-xl flex-col items-stretch justify-center gap-3 pt-5 md:flex-row">
+                    <a class="flex flex-1 items-center justify-center text-center text-xl text-white font-semibold border p-4 rounded-2xl bg-blue-700 hover:bg-blue-800" href=""><i class="fab fa-github text-lg px-3"></i>Mi perfil de GitHub</a>
+                    <a class="flex flex-1 items-center justify-center text-center text-xl text-white font-semibold border p-4 rounded-2xl bg-slate-800 hover:bg-slate-600" href="#sobre-mi"><i class="fas fa-arrow-down text-electric-500 px-3"></i>Conocer más</a>
+                </div>
+            </div>
+            <img class="mx-auto rounded-full border border-white" src="img/image.png" alt="foto de perfil">
+        </section>
+
+        <section id="sobre-mi" class="px-10 md:px-30 lg:px-30 bg-slate-800 py-2">
+            <div class="text-center font-bold py-2">
+                <p class="text-xs text-blue-700 uppercase">Perfil personal</p>
+                <h2 class="text-3xl">Sobre mí</h2>
+                <div class="w-12 h-1 bg-blue-700 mx-auto rounded-full mt-3"></div>
+            </div>
+
+            <div class="bg-slate-700 border-3 border-slate-900 rounded-2xl lg:mx-30 p-5 mb-8">
+                <div class="w-12 h-12 rounded-xl bg-slate-500/10 border border-slate-500/30 flex items-center justify-center text-blue-700 text-xl">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-2 mt-3">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white" >Estudiante de desarrollo web en constante evolución</h3>
+                        <p class="">Me apasiona crear experiencias digitales estructuradas y visualmente atractivas. Como estudiante de desarrollo de software, dedico mi día a día a fortalecer la lógica de programación y dominar las tecnologías fundamentales de la Web.</p>
+                        <p>Mi meta es perfeccionar mis habilidades en código semántico, diseño responsive y JavaScript para construir soluciones eficaces e innovadoras.</p>
+                    </div>
+
+                    <div class="bg-gray-800 h-50 p-6 rounded-xl border-2 border-gray-900 space-y-4 justify-self-center self-center">
+                        <h3 class="text-xs font-bold uppercase">Datos Rápidos</h3>
+                        <div class="space-y-8 text-sm">
+                            <div class="md:flex gap-2 pb-2 border-b border-slate-500">
+                                <h4><i class="fas fa-user text-electric-500 mr-2"></i>Nombre</h4>
+                                <p>Juan Pablo Morales Salazar</p>
+                            </div>
+                            <div class="md:flex gap-2 pb-2 border-b border-slate-500">
+                                <h4><i class="fas fa-map-marker-alt text-electric-500 mr-2"></i>Ubicación</h4>
+                                <p>Caldas, Antioquia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="px-10 md:px-30 lg:px-30 bg-slate-950/95 py-2">
+            <div class="text-center font-bold py-2">
+                <p class="text-xs text-blue-700 uppercase">Herramientas Principales</p>
+                <h2 class="text-3xl">Habilidades</h2>
+                <div class="w-12 h-1 bg-blue-700 mx-auto rounded-full mt-3"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-8">
+                <div class="group bg-gray-800 p-6 rounded-xl border-2 border-gray-900 space-y-4 justify-self-center self-center">
+                    <div class="Flex items-start justify-between">
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-slate-900 border border-slate-700 flex items-center justify-center text-3xl text-white">
+                                <i class="fab fa-github text-white transition-colors duration-300 group-hover:text-blue-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white">GitHub</h3>
+                                <p  class="text-xs text-slate-400">Control de Versiones y Repositorios</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400">Gestión de proyectos en la nube, control de ramas, almacenamiento de código fuente y publicación continua en GitHub Pages.</p>
+                </div>
+
+                <div class="group bg-gray-800 p-6 rounded-xl border-2 border-gray-900 space-y-4 justify-self-center self-center">
+                    <div class="Flex items-start justify-between">
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-slate-900 border border-slate-700 flex items-center justify-center text-3xl text-white">
+                                <i class="fab fa-git-alt text-whit transition-colors duration-300 group-hover:text-orange-700"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Git</h3>
+                                <p  class="text-xs text-slate-400">Sistema de control de versiones para gestionar cambios en el código.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400">Gestión de proyectos en la nube, control de ramas, almacenamiento de código fuente y publicación continua en GitHub Pages.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <p>Stack Técnico</p>
+            <h2>Tecnologías que estoy aprendiendo</h2>
+
+            <div>
+                <h3>HTML</h3>
+                <p>Estructura web semántica, formularios y buena accesibilidad.</p>
+            </div>
+            <div>
+                <h3>CSS</h3>
+                <p>Estilos responsivos, Flexbox, CSS Grid, Bootstrap y Tailwind CSS.</p>
+            </div>
+            <div>
+                <h3>Git</h3>
+                <p>Comandos de terminal, commits y flujo de trabajo estructurado.</p>
+            </div>
+            <div>
+                <h3>JavaScript</h3>
+                <p>Lógica de programación, eventos e interactividad con el DOM.</p>
+            </div>
+        </section>
 
 
-    <h2>Sobre mi</h2>
-    <p>Vivo en Caldas Antioquia y estoy aprendiendo a construir sitios web.</p>
+        <section>
+            <p>Planificación</p>
+            <h2>Mis horarios</h2>
 
-    <h2>Habilidades</h2>
-    <!-- Orden de lista que no es tan importante se utiliza <ul> -->
-        <ul>
-            <li>GitHub</li>
-            <li>Excel</li>
-        </ul>
-    <h2>Tecnologias que estoy aprendiendo</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Git</li>
-    </ul>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Horarios</th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Mañana</td><td>Riwi</td><td>Riwi</td><td>Riwi</td><td>Riwi</td><td>Riwi</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <footer>
+            <div>
+                <h3>Juan Pablo Morales Salazar</h3>
+                <p>Estudiante & Desarrollador Web</p>
+                <p>Caldas, Antioquia, Colombia</p>
+            </div>
+            <div>
+                <a href="">GitHub</a>
+                <a href="">LinkedIn</a>
+            </div>
+
+            <div>
+                <span>
+                    Volver arriba
+                </span>
+            </div>
+
+            <div>
+                <p>&copy; 2026 Juan Pablo Morales Salazar.</p>
+                <p>Diseñado con HTML5, CSS3 & Tailwind CSS</p>
+            </div>
+
+        </footer>
+
+    </main>
+
+    <footer>
+        <a href="https://github.com/JuanPMorales" target="_blank">Mi perfil de github</a>    
+    </footer>
     
-    <h2>Mi ruta de aprendizaje</h2>
-    <ol>
-        <li>Git</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-    </ol>
+    
+    
 
-    <table border="1">
-        <caption>Mis horarios</caption>
-        <thead>
-            <tr>
-                <th scope="col">horarios</th>
-                <th scope="col">lunes</th>
-                <th scope="col">Martes</th>
-                <th scope="col">Miercoles</th>
-                <th scope="col">Jueves</th>
-                <th scope="col">Viernes</th>
-                <th scope="col">Sabado</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr><td>7am-9am</td><td></td><td></td><td></td><td></td><td></td><td>Entrenamiento con el club</td></tr>
-            <tr><td>6am-2pm</td><td>Riwi</td><td>Riwi</td><td>Riwi</td><td>Riwi</td><td>Riwi</td></tr>
-            <tr><td>4pm-5:30pm</td><td>Gym</td><td></td><td>Gym</td><td></td><td>Gym</td><td></td></tr>
-            <tr><td>5:30pm-7:30pm</td><td></td><td></td><td></td><td>Entrenamiento con el club</td><td></td><td></td></tr>
-            <tr><td>7:30pm-9pm</td><td>Entrenamiento con el club</td><td>Entrenamiento con el club</td><td>Entrenamiento con el club</td><td></td><td>Entrenamiento con el club</td><td></td></tr> 
-        </tbody>
-    </table>
-    <a href="https://github.com/JuanPMorales" target="_blank">Mi perfil de github</a>
+    
 </body>
 </html>
